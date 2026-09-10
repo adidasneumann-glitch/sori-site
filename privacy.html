@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy — Sori</title>
+<meta name="description" content="What the Sori Korean-learning app stores on your device, what leaves it (crash reports, subscription checks, YouTube playback), and your rights under the GDPR.">
+<style>
+:root{--bg:#fbfaf7;--fg:#1c1b1a;--muted:#5f5d58;--accent:#b8321f;--rule:#e6e2da;--card:#f3f0ea}
+@media (prefers-color-scheme:dark){:root{--bg:#141826;--fg:#ece9e2;--muted:#a9a69e;--accent:#e8604f;--rule:#2a3044;--card:#1b2032}}
+html{color-scheme:light dark}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:44rem;margin:0 auto;padding:1.5rem 1.25rem 4rem}
+header.site{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;border-bottom:1px solid var(--rule);padding-bottom:.75rem;margin-bottom:2rem;flex-wrap:wrap}
+header.site a{color:var(--fg);text-decoration:none;font-weight:600}
+header.site nav a{font-weight:400;color:var(--muted);margin-left:1rem}
+header.site nav a[aria-current]{color:var(--accent)}
+h1{font-size:1.9rem;line-height:1.2;margin:0 0 .25rem}
+.meta{color:var(--muted);margin:0 0 1.5rem}
+h2{font-size:1.25rem;margin:2rem 0 .5rem}
+h3{font-size:1.05rem;margin:1.25rem 0 .25rem}
+a{color:var(--accent)}
+ul{padding-left:1.25rem}
+li{margin:.25rem 0}
+.box{background:var(--card);border-radius:10px;padding:1rem 1.1rem;margin:1rem 0}
+.box p:first-child{margin-top:0}
+.wrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+th,td{text-align:left;vertical-align:top;padding:.5rem .6rem;border-bottom:1px solid var(--rule)}
+th{color:var(--muted);font-weight:600}
+footer{margin-top:3rem;border-top:1px solid var(--rule);padding-top:1rem;color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<main>
+<header class="site">
+  <a href="./">Sori</a>
+  <nav><a href="privacy.html" aria-current="page">Privacy</a><a href="terms.html">Terms</a><a href="support.html">Support</a></nav>
+</header>
+
+<h1>Privacy policy</h1>
+<p class="meta">Version 1.0 · Effective 10 September 2026 · Applies to the Sori app for iOS and Android and to this website.</p>
+
+<div class="box">
+  <p><strong>The short version.</strong></p>
+  <ul>
+    <li>Sori has no accounts. You never give us a name, email address or password to use it.</li>
+    <li>Your learning data (saved words, streak, progress) lives on your phone. We run no server and keep no copy of it.</li>
+    <li>Three things leave your phone: crash reports to Sentry, subscription checks to RevenueCat and the app stores, and video playback through YouTube's own player. Each is described below.</li>
+    <li>No analytics, no advertising SDKs of ours, no selling of data.</li>
+  </ul>
+</div>
+
+<h2>1. Who is responsible</h2>
+<p>Sori is published by an individual developer based in the Czech Republic (the "publisher", "we"). Under the EU General Data Protection Regulation (GDPR), the publisher is the <em>controller</em> of the personal data described in this policy. You can reach us at <a href="mailto:sori.korean.app@gmail.com">sori.korean.app@gmail.com</a>. We have not appointed a data protection officer, as the law does not require one for an app of this kind.</p>
+
+<h2>2. What stays on your device</h2>
+<p>The app keeps the following in its private storage on your phone:</p>
+<ul>
+  <li>your onboarding answers (your Korean level and your goals);</li>
+  <li>the words you save and the clips you bookmark;</li>
+  <li>which clips you have watched and when, and the results of your review sessions;</li>
+  <li>daily counts (transcripts opened, review sessions, watch time), your streak, and your settings (for example sound effects);</li>
+  <li>a local note of whether Sori Pro is active.</li>
+</ul>
+<p>None of this is sent to us. We have no server, so there is nothing to send it to. Deleting the app deletes it. Your phone's own backup service (iCloud or Google backup) may include the app's storage according to your device settings; that backup is governed by Apple's or Google's terms, not ours.</p>
+
+<h2>3. Crash reports — Sentry</h2>
+<p>When the app crashes or runs into an unexpected error, it sends a crash report to <strong>Sentry</strong> (Functional Software, Inc., San Francisco, USA), which processes it on our behalf.</p>
+<h3>What a report contains</h3>
+<ul>
+  <li>The error and its stack trace: our source file names, function names and line numbers. Every run of Korean text is replaced by <code>[ko]</code> before the report leaves the app.</li>
+  <li>The app's identifier, version and build number, and which part of the app reported the error.</li>
+  <li>Device details: manufacturer, model, processor architecture, screen size, memory, orientation; on Android also battery level, free memory and storage, and the connection type (Wi-Fi or mobile, never the network's name).</li>
+  <li>Operating system name and version; your language and time zone (for example <code>cs_CZ</code>, <code>Europe/Prague</code>).</li>
+  <li>A random installation id that the Sentry software generates on first launch. It is not derived from any hardware or advertising identifier, it is tied to no account, and reinstalling the app resets it. Sentry uses it to count how many installations an error affects.</li>
+  <li>Up to 50 "breadcrumbs": app lifecycle events (foreground, background, low memory) from the moments before the error.</li>
+  <li>A small session record per app start: the app version, how long the session lasted and whether it crashed.</li>
+</ul>
+<h3>What a report never contains</h3>
+<p>Transcript text, your saved words, your search text, your answers, console output, network requests, screenshots, your device's name, precise location, or any account identifier (there are none). We have configured Sentry not to store IP addresses and to remove the approximate location it would otherwise infer from the connection.</p>
+<h3>Legal basis and retention</h3>
+<p>We rely on our legitimate interest in keeping the app working (Article 6(1)(f) GDPR). Sentry deletes reports after 90 days. Sentry processes the data under its <a href="https://sentry.io/legal/dpa/">Data Processing Addendum</a>.</p>
+
+<h2>4. Subscriptions — the app stores and RevenueCat</h2>
+<p>Sori Pro is sold as an auto-renewing subscription through Apple's App Store or Google Play. The purchase itself is between you and Apple or Google: they take the payment, and we never see your card or bank details. <a href="https://www.apple.com/legal/privacy/">Apple's</a> and <a href="https://policies.google.com/privacy">Google's</a> privacy policies apply to that part.</p>
+<p>To find out whether Pro is active on your phone, the app uses <strong>RevenueCat</strong> (RevenueCat, Inc., Florida, USA), which processes the following on our behalf:</p>
+<ul>
+  <li>an anonymous app user id: a random string the RevenueCat software creates on your device (no name, email or account is attached to it);</li>
+  <li>the store's purchase record (the Apple receipt or the Google purchase token) and the subscription's status and history;</li>
+  <li>device type and operating system version, the app version, and the last time the app was used.</li>
+</ul>
+<p>Like any online service, RevenueCat's servers see your IP address when the app contacts them. The app does not send advertising identifiers (IDFA, GAID) to RevenueCat.</p>
+<p>We rely on the performance of our contract with you (Article 6(1)(b) GDPR). RevenueCat keeps the record for as long as it is needed to honour the subscription. RevenueCat processes the data under its <a href="https://www.revenuecat.com/dpa/">Data Processing Addendum</a>.</p>
+
+<h2>5. Video playback — YouTube</h2>
+<p>The clips in Sori are YouTube videos. They play inside the app in YouTube's own embedded player, which the app loads from youtube.com through a small hosting page on GitHub Pages provided by the open-source player library the app uses. Sori uses YouTube API Services.</p>
+<p>When you play a clip, Google receives what it would receive if you watched an embedded YouTube video in a web browser: your IP address, device and player details, which video you watched and for how long, and any Google cookies or identifiers already on your device. Google may show ads in the player. Google (for users in the European Economic Area, Google Ireland Limited) decides how it uses that data. It acts as an independent controller, not as our processor, under the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>.</p>
+<p>Sori never sends your learning data to YouTube, and Sori receives no data about you from Google. Handing playback to YouTube is part of providing the service you asked for (Article 6(1)(b) GDPR).</p>
+
+<h2>6. This website</h2>
+<p>This site is hosted on GitHub Pages (GitHub, Inc.). GitHub may log visitors' IP addresses for security purposes under the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub General Privacy Statement</a>. The site itself sets no cookies and runs no analytics.</p>
+
+<h2>7. Who else sees your data</h2>
+<p>Nobody. We do not sell personal data, we run no advertising network of our own, and we use no analytics service. We would disclose data only if the law required us to.</p>
+<div class="wrap">
+<table>
+  <tr><th>Provider</th><th>Role</th><th>Data</th><th>Terms</th></tr>
+  <tr><td>Sentry (Functional Software, Inc., USA)</td><td>Processor</td><td>Crash reports (section 3)</td><td><a href="https://sentry.io/legal/dpa/">DPA</a></td></tr>
+  <tr><td>RevenueCat, Inc. (USA)</td><td>Processor</td><td>Subscription status (section 4)</td><td><a href="https://www.revenuecat.com/dpa/">DPA</a></td></tr>
+  <tr><td>Apple / Google Play</td><td>Independent controllers</td><td>Your purchase and payment</td><td><a href="https://www.apple.com/legal/privacy/">Apple</a>, <a href="https://policies.google.com/privacy">Google</a></td></tr>
+  <tr><td>Google / YouTube</td><td>Independent controller</td><td>Video playback (section 5)</td><td><a href="https://policies.google.com/privacy">Google Privacy Policy</a></td></tr>
+  <tr><td>GitHub, Inc. (USA)</td><td>Host of this website</td><td>Visitor logs (section 6)</td><td><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">Privacy statement</a></td></tr>
+</table>
+</div>
+
+<h2>8. Transfers outside the European Economic Area</h2>
+<p>Sentry, RevenueCat, Google and GitHub are United States companies. Transfers to them rely on the EU–US Data Privacy Framework where the provider is certified under it, and otherwise on the European Commission's Standard Contractual Clauses, as set out in each provider's data processing terms linked above.</p>
+
+<h2>9. Your rights</h2>
+<p>Under the GDPR you can ask us for access to your personal data, for its rectification or erasure, for restriction of processing, for a copy in a portable format, and you can object to processing based on our legitimate interest (the crash reports). Email <a href="mailto:sori.korean.app@gmail.com">sori.korean.app@gmail.com</a>. We answer within one month.</p>
+<p>Two practical notes. Almost everything is on your device, so deleting the app deletes it. And because the app has no accounts, we cannot find a crash report or a subscription record from your name alone; we will tell you which detail we need (for example the store's order id or the purchase date) so that we can locate and delete it.</p>
+<p>You can also complain to a supervisory authority: in the Czech Republic the <a href="https://uoou.gov.cz/">Office for Personal Data Protection (Úřad pro ochranu osobních údajů)</a>, or the authority in the country where you live.</p>
+
+<h2>10. Children</h2>
+<p>Sori is not directed at children under 13, and we do not knowingly collect personal data from them. If you believe a child has used the app and data about them has reached one of the providers above, email us and we will help remove it.</p>
+
+<h2>11. Changes to this policy</h2>
+<p>When this policy changes, we publish the new version here with a new version number and effective date at the top. If a change materially affects you, we say so in the app or in its store listing before it takes effect.</p>
+
+<footer>
+  <p>Sori · Privacy policy · Version 1.0 · Effective 10 September 2026 · <a href="mailto:sori.korean.app@gmail.com">sori.korean.app@gmail.com</a></p>
+  <p><a href="terms.html">Terms of use</a> · <a href="support.html">Support</a></p>
+</footer>
+</main>
+</body>
+</html>
